@@ -42,5 +42,6 @@ examples include repository, apicall and redis.
 ## Stacks
 
 - Node.js v20.11.0
+- Express.js
 - MySQL
 - JWT
