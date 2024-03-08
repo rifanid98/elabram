@@ -36,10 +36,6 @@ export class CompanyServiceImpl extends CompanyService {
         return { error: result.error };
       }
 
-      console.log({
-        company: this.presenter.showAll(result.company),
-      });
-
       return {
         company: this.presenter.showAll(result.company),
       };
@@ -107,7 +103,6 @@ export class CompanyServiceImpl extends CompanyService {
       if (check.error) {
         return { error: check.error };
       }
-      console.log();
       if (check?.company?.id && check?.company?.id != company.id) {
         return { error: new Error("company already exist") };
       }
