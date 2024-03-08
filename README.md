@@ -27,7 +27,8 @@ examples include repository, apicall and redis.
 
 ## Getting Started
 
-- The system must be ensured to have MySQL
+- The system must be ensured to have MySQL & yarn
+- Install dependencies `yarn install`
 - Copy `.env.example` to `.env`
 - Configure `.env` configurations with your own config
 - Run migrations `yarn knex:migrate:latest`
