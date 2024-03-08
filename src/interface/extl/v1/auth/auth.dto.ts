@@ -1,4 +1,10 @@
-import {IsEmail, IsNotEmpty, Matches, MaxLength, MinLength} from "class-validator";
+import {
+  IsEmail,
+  IsNotEmpty,
+  Matches,
+  MaxLength,
+  MinLength,
+} from "class-validator";
 import { User } from "../../../../core/entity";
 
 export class AuthSignUpDto extends User {
@@ -17,6 +23,10 @@ export class AuthSignUpDto extends User {
       "passwords should contain at least 1 number or special character",
   })
   password: string;
+
+  @IsNotEmpty()
+  @MinLength(6)
+  fullname: string;
 
   bind(user: User): AuthSignUpDto {
     Object.keys(user).forEach((key: string) => {

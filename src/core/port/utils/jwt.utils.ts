@@ -7,7 +7,6 @@ export type JwtResponse<T> = {
 
 interface JwtInterface {
   sign(payload: any): JwtResponse<string>;
-
   verify<T>(payload: any): JwtResponse<T>;
 }
 

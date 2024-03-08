@@ -13,7 +13,8 @@ Content-Type: application/json
 
 {
   "email": "user@email.com",
-  "password": "32124Dsa"
+  "password": "32124Dsa",
+  "fullname": "User User User"
 }
 
 ### Health

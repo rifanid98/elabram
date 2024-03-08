@@ -2,14 +2,17 @@ import { User, UserEntityInterface } from "../../../../core/entity/user.entity";
 import { singleton } from "tsyringe";
 
 export class HealthPresenter {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   json(entity: User): UserEntityInterface {
     return undefined;
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   show(entity: User): User {
     return undefined;
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   showAll(entity: User): User {
     return undefined;
   }

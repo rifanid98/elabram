@@ -35,7 +35,7 @@ export class AuthControllerImpl implements AuthController {
     const user = new User().bind(body);
     const signin = new AuthSignInDto().bind(body);
 
-    const validate = await this.validator.validate<User>(signin);
+    const validate = await this.validator.validate<AuthSignInDto>(signin);
     if (validate.error) {
       return res
         .status(HttpStatus.BAD_REQUEST)
@@ -70,7 +70,7 @@ export class AuthControllerImpl implements AuthController {
     const user = new User().bind(body);
     const signup = new AuthSignUpDto().bind(body);
 
-    const validate = await this.validator.validate<User>(signup);
+    const validate = await this.validator.validate<AuthSignUpDto>(signup);
     if (validate.error) {
       return res
         .status(HttpStatus.BAD_REQUEST)
