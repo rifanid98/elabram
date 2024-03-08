@@ -1,0 +1,52 @@
+### Signin
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+  "email": "user@email.com",
+  "password": "32124Dsa"
+}
+
+### Signup
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "email": "user@email.com",
+  "password": "32124Dsa"
+}
+
+### Health
+GET http://localhost:3000/health/
+Accept: application/json
+
+
+### Create Company
+POST http://localhost:3000/company
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiZW1haWwiOiJ1c2VyQGVtYWlsLmNvbSIsImZ1bGxuYW1lIjpudWxsLCJpYXQiOjE3MDk4OTI1NTEsImV4cCI6MTcwOTk3ODk1MX0.1a-rpWF_1cHQ4HpZoP0Kh2eRUWqSbiutkgw2rpGc8q0
+
+{
+  "company_name": "company"
+}
+
+### View Company
+GET http://localhost:3000/company/10
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiZW1haWwiOiJ1c2VyQGVtYWlsLmNvbSIsImZ1bGxuYW1lIjpudWxsLCJpYXQiOjE3MDk4OTI1NTEsImV4cCI6MTcwOTk3ODk1MX0.1a-rpWF_1cHQ4HpZoP0Kh2eRUWqSbiutkgw2rpGc8q0
+
+### Update Company
+PUT http://localhost:3000/company/10
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiZW1haWwiOiJ1c2VyQGVtYWlsLmNvbSIsImZ1bGxuYW1lIjpudWxsLCJpYXQiOjE3MDk4OTI1NTEsImV4cCI6MTcwOTk3ODk1MX0.1a-rpWF_1cHQ4HpZoP0Kh2eRUWqSbiutkgw2rpGc8q0
+
+{
+  "company_name": "company"
+}
+
+### Delete Company
+DELETE http://localhost:3000/company/11
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiZW1haWwiOiJ1c2VyQGVtYWlsLmNvbSIsImZ1bGxuYW1lIjpudWxsLCJpYXQiOjE3MDk4OTI1NTEsImV4cCI6MTcwOTk3ODk1MX0.1a-rpWF_1cHQ4HpZoP0Kh2eRUWqSbiutkgw2rpGc8q0
+
+###
