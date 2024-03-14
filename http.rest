@@ -25,29 +25,29 @@ Accept: application/json
 ### Create Company
 POST http://localhost:3000/company
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiZW1haWwiOiJ1c2VyQGVtYWlsLmNvbSIsImZ1bGxuYW1lIjpudWxsLCJpYXQiOjE3MDk4OTI1NTEsImV4cCI6MTcwOTk3ODk1MX0.1a-rpWF_1cHQ4HpZoP0Kh2eRUWqSbiutkgw2rpGc8q0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYsImVtYWlsIjoidXNlckBlbWFpbC5jb20iLCJmdWxsbmFtZSI6IlVzZXIgVXNlciBVc2VyIiwiaWF0IjoxNzEwNDAxNjEyLCJleHAiOjE3MTA0ODgwMTJ9.ItiE_xlRVwUvjFqPg8Z4C72vp9qGKgfjfX3CXLAVszY
 
 {
-  "company_name": "company"
+  "company_name": "company12"
 }
 
 ### View Company
-GET http://localhost:3000/company/10
+GET http://localhost:3000/company/26
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiZW1haWwiOiJ1c2VyQGVtYWlsLmNvbSIsImZ1bGxuYW1lIjpudWxsLCJpYXQiOjE3MDk4OTI1NTEsImV4cCI6MTcwOTk3ODk1MX0.1a-rpWF_1cHQ4HpZoP0Kh2eRUWqSbiutkgw2rpGc8q0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYsImVtYWlsIjoidXNlckBlbWFpbC5jb20iLCJmdWxsbmFtZSI6IlVzZXIgVXNlciBVc2VyIiwiaWF0IjoxNzEwNDAxNjEyLCJleHAiOjE3MTA0ODgwMTJ9.ItiE_xlRVwUvjFqPg8Z4C72vp9qGKgfjfX3CXLAVszY
 
 ### Update Company
-PUT http://localhost:3000/company/10
+PUT http://localhost:3000/company/13
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiZW1haWwiOiJ1c2VyQGVtYWlsLmNvbSIsImZ1bGxuYW1lIjpudWxsLCJpYXQiOjE3MDk4OTI1NTEsImV4cCI6MTcwOTk3ODk1MX0.1a-rpWF_1cHQ4HpZoP0Kh2eRUWqSbiutkgw2rpGc8q0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYsImVtYWlsIjoidXNlckBlbWFpbC5jb20iLCJmdWxsbmFtZSI6IlVzZXIgVXNlciBVc2VyIiwiaWF0IjoxNzEwNDAxNjEyLCJleHAiOjE3MTA0ODgwMTJ9.ItiE_xlRVwUvjFqPg8Z4C72vp9qGKgfjfX3CXLAVszY
 
 {
-  "company_name": "company"
+  "company_name": "company3"
 }
 
 ### Delete Company
-DELETE http://localhost:3000/company/11
+DELETE http://localhost:3000/company/12
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiZW1haWwiOiJ1c2VyQGVtYWlsLmNvbSIsImZ1bGxuYW1lIjpudWxsLCJpYXQiOjE3MDk4OTI1NTEsImV4cCI6MTcwOTk3ODk1MX0.1a-rpWF_1cHQ4HpZoP0Kh2eRUWqSbiutkgw2rpGc8q0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYsImVtYWlsIjoidXNlckBlbWFpbC5jb20iLCJmdWxsbmFtZSI6IlVzZXIgVXNlciBVc2VyIiwiaWF0IjoxNzEwNDAxNjEyLCJleHAiOjE3MTA0ODgwMTJ9.ItiE_xlRVwUvjFqPg8Z4C72vp9qGKgfjfX3CXLAVszY
 
 ###

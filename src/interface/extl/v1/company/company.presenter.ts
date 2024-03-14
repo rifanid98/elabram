@@ -49,9 +49,11 @@ export class CompanyPresenterImpl implements CompanyPresenter {
   }
 
   private jakartaTime(date: string): string {
+    console.log(date);
     const parsed = Date.parse(date);
     const newdate = new Date(parsed + 7 * 60 * 60 * 1000);
     const split = newdate.toISOString().split("T");
+    console.log(split["0"] + " " + split[1].split(".")[0]);
     return split["0"] + " " + split[1].split(".")[0];
   }
 }

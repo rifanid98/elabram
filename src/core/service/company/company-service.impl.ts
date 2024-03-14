@@ -5,6 +5,7 @@ import { CompanyService, Result } from "../../port/service/company.service";
 import { CompanyRepository } from "../../port/repository/company.repository";
 import { Logger } from "../../port/infrastructure";
 import { CompanyServiceProvider } from "../../../di/provider/company";
+import { DateUtil } from "../../port/utils/date.utils";
 
 @singleton()
 @autoInjectable()
@@ -15,6 +16,7 @@ export class CompanyServiceImpl extends CompanyService {
     private presenter: CompanyPresenter,
     private companyRepository: CompanyRepository,
     private logger: Logger,
+    private date: DateUtil,
   ) {
     super();
   }
@@ -31,6 +33,7 @@ export class CompanyServiceImpl extends CompanyService {
         return { error: new Error("company already exist") };
       }
 
+      company.created_at = this.date.now();
       const result = await this.companyRepository.createCompany(company);
       if (result.error) {
         return { error: result.error };
@@ -48,6 +51,7 @@ export class CompanyServiceImpl extends CompanyService {
   async view(company: Company): Promise<Result> {
     try {
       const result = await this.companyRepository.getCompanyById(company.id);
+      console.log(result);
       if (result.error) {
         return { error: result.error };
       }
